@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Bootstrap demo</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous" />
+
+        <style>
+            .nav-item {
+                transition: all ease-in-out 0.3s;
+            }
+            .nav-item a {
+                transition: color ease-in-out 0.3s;
+            }
+            .nav-item:hover {
+                background-color: rgb(30, 54, 107);
+                color: white;
+                border-radius: 5px;
+            }
+            .nav-item a:hover {
+                color: white;
+            }
+            img {
+                object-fit: cover;
+                height: 360px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <div>
+                        <ul class="navbar-nav d-flex flex-row gap-5 navHover">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            src="https://media.cnn.com/api/v1/images/stellar/prod/210316134817-03-wisdom-project-autumn.jpg?q=w_4000,h_2250,x_0,y_0,c_fill"
+                            class="d-block w-100"
+                            alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRveLH_ogqb-sxTqU4W_q1yUJZDz3qZI16nvg&s"
+                            class="d-block w-100"
+                            alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://cdn.shopify.com/s/files/1/0778/2679/files/spring_trees.jpg?v=1616252131"
+                            class="d-block w-100"
+                            alt="..." />
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="d-flex gap-6 flex-md-row flex-column p-6">
+                <div>
+                    <h2>Autumn</h2>
+                    <p>
+                        Autumn, also known as fall, is one of the four temperate seasons on Earth. Outside the tropics, 
+                        autumn marks the transition from summer to winter, in September (Northern Hemisphere) or March (Southern Hemisphere). 
+                        Autumn is the season when the duration of daylight
+                         becomes noticeably shorter and the temperature cools considerably.
+                    </p>
+                    <button class="btn btn-primary">View More</button>
+                </div>
+                <div>
+                    <h2>Winter</h2>
+                    <p>
+                        Winter is one of the most important seasons in India. It is a part of the four seasons that occur in India.
+                         Winters are the coolest season that starts from December and last till March. 
+                        The peak time when winter is experienced the most in December and January.
+                    </p>
+                    <button class="btn btn-primary">View More</button>
+                </div>
+                <div>
+                    <h2>Spring</h2>
+                    <p>
+                        The spring season is a time of year when the weather starts to change.
+                         It is a transition season between the winter and summer seasons. The days get longer and nights get shorter, 
+                         the temperature is milder, and flowers bloom. 
+                        There is a warm wind in the spring season in the air.
+                    </p>
+                    <button class="btn btn-primary">View More</button>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
