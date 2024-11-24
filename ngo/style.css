@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://static.vecteezy.com/system/resources/thumbnails/027/012/938/small_2x/hungry-starving-poor-little-child-looking-at-the-camera-photo.jpg) no-repeat center/cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px 25px;
+    position: relative;
+}
+
+.navbar h1 {
+    display: inline-block;
+    padding: 0 10px;
+    color: whitesmoke;
+}
+
+.navbar h1:nth-of-type(1) {
+    background-color: rgba(220, 79, 66, 0.929);
+    clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+}
+
+.navbar h1:nth-of-type(2) {
+    background-color: black;
+}
+
+.navbar h1:nth-of-type(3) {
+    background-color: black;
+    clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+}
+
+.navbar h1:first-child {
+    margin-left: 25px;
+}
+
+.navbar .nav {
+    display: inline-block;
+    position: absolute;
+    right: 8%;
+    top: 25px;
+}
+
+.navbar .nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0 15px;
+    font-weight: 600;
+}
+
+.content {
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    padding: 15px 25px;
+    margin-left: 8rem;
+}
+
+.content h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+.content h1:first-child {
+    margin-bottom: 1rem;
+    text-shadow: -1px 2px 32px rgba(0, 0, 0, 0.8);
+}
+
+.content h1:nth-of-type(2) {
+    margin-bottom: 3rem;
+}
+
+.content p {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+.content p+span {
+    font-size: 1.5rem;
+    background-color: rgb(255, 106, 0);
+    color: whitesmoke;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.content h1 span {
+    background-color: rgb(255, 106, 0);
+    padding: 0 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.tag {
+    color: white;
+    position: absolute;
+    right: 45%;
+    bottom: 10%;
+    font-size: 3rem;
+    background-color: whitesmoke;
+    height: 130px;
+    width: 130px;
+    text-align: center;
+}
+
+.tag {
+    transform: rotate(45deg);
+    border-radius: 5px;
+    box-shadow: 2px 2px 100px 24px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 2px 2px 100px 24px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 2px 2px 100px 24px rgba(0, 0, 0, 0.8);
+}
+
+.tag h1 {
+    color: rgb(255, 106, 0);
+    transform: rotate(-45deg);
+}
